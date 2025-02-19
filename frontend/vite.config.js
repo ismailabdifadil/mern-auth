@@ -8,7 +8,7 @@ export default defineConfig({
 
   server: {
     proxy: {
-      '/api/': 'http://localhost:8000',
+      '/api/': 'https://mern-auth-b3ki.onrender.com',
     },
     port: 3000,
   },
