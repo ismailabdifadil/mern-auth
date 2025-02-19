@@ -29,7 +29,7 @@ const SignUp = () => {
 
     setLoading(true)
     try {
-      const { data } = await axios.post('/api/user/sign-up', formData)
+      const { data } = await axios.post('https://mern-auth-b3ki.onrender.com/api/user/sign-up', formData)
       if (!data.success) {
         toast.error(data.message)
         return
