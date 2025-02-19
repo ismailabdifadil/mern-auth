@@ -30,7 +30,7 @@ const SignIn = () => {
 
     try {
       setLoading(true)
-      const { data } = await axios.post('https://mern-auth-b3ki.onrender.com/api/user/sign-in', formData)
+      const { data } = await axios.post('/api/user/sign-in', formData)
       toast.success(data.message)
       setLoading(false)
       login(data, data.expiresIn)
