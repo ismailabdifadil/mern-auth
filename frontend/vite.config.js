@@ -5,11 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-
-  server: {
-    proxy: {
-      '/api/': 'https://mern-auth-b3ki.onrender.com',
-    },
     port: 3000,
   },
 })
